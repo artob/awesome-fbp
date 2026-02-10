@@ -78,113 +78,268 @@ widely-used languages:
     <tr>
       <td>Feature</td>
       <td>
-          <a href="https://clojure.github.io/core.async/flow.html">core.async.flow</a>
+        <a href="https://clojure.github.io/core.async/flow.html">core.async.flow</a>
       </td>
       <td>
-          <a href="https://dart.dev/language/isolates">isolates</a>
+        <a href="https://dart.dev/language/isolates">isolates</a>
       </td>
       <td>
-          <a href="https://erlang.org/doc/system/ref_man_processes.html">processes</a>
+        <a href="https://erlang.org/doc/system/ref_man_processes.html">processes</a>
       </td>
       <td>
-          <a href="https://go.dev/tour/concurrency/1">goroutines</a>,
-          <a href="https://go.dev/tour/concurrency/2">channels</a>
+        <a href="https://go.dev/tour/concurrency/1">goroutines</a>, <a href="https://go.dev/tour/concurrency/2">channels</a>
       </td>
       <td>
-          <a href="https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html">asyncio</a>
+        <a href="https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html">asyncio</a>
       </td>
       <td>
-          <a href="https://docs.ruby-lang.org/en/master/language/ractor_md.html">ractors</a>
+        <a href="https://docs.ruby-lang.org/en/master/language/ractor_md.html">ractors</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Since</td>
+      <td>
+        <a href="https://clojure.org/news/2025/04/28/async_flow">2025</a>
+      </td>
+      <td>
+        <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)">1.0</a>
+      </td>
+      <td>
+        <a href="https://en.wikipedia.org/wiki/Erlang_(programming_language)">OTP</a>
+      </td>
+      <td>
+        <a href="https://go.dev/blog/go1">1.0</a>
+      </td>
+      <td>
+        <a href="https://peps.python.org/pep-3156/">3.5</a>
+      </td>
+      <td>
+        <a href="https://ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/">4.0</a>
       </td>
     </tr>
     <tr>
       <td>Runtime</td>
       <td>
-          <a href="https://clojure.github.io/core.async/clojure.core.async.flow.html"><code>core.async.flow</code></a>
+        <a href="https://clojure.github.io/core.async/clojure.core.async.flow.html"><code>core.async.flow</code></a>
       </td>
       <td>
-          <a href="https://api.flutter.dev/flutter/dart-isolate/"><code>dart:isolate</code></a>
+        <a href="https://api.flutter.dev/flutter/dart-isolate/"><code>dart:isolate</code></a>
       </td>
       <td>
-          <a href="https://erlang.org/doc/system/ref_man_processes.html"><code>spawn</code></a>
+        <a href="https://erlang.org/doc/system/ref_man_processes.html"><code>spawn</code></a>
       </td>
       <td>
-          <a href="https://go.dev/ref/spec#Go_statements"><code>go</code></a>,
-          <a href="https://go.dev/ref/spec#Making_slices_maps_and_channels"><code>make(chan)</code></a>
+        <a href="https://go.dev/ref/spec#Go_statements"><code>go</code></a>, <a href="https://go.dev/ref/spec#Making_slices_maps_and_channels"><code>make(chan)</code></a>
       </td>
       <td>
-          <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a>
+        <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a>
       </td>
       <td>
-          <a href="https://docs.ruby-lang.org/en/master/Ractor.html"><code>Ractor</code></a>
+        <a href="https://docs.ruby-lang.org/en/master/Ractor.html"><code>Ractor</code></a>
       </td>
     </tr>
     <tr>
       <td>Process</td>
       <td>
-          <a href="https://clojure.github.io/core.async/clojure.core.async.flow.html#var-process"><code>(process)</code></a>
+        <a href="https://clojure.github.io/core.async/clojure.core.async.flow.html#var-process"><code>(process)</code></a>
       </td>
       <td>
-          <a href="https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html"><code>Isolate</code></a>
+        <a href="https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html"><code>Isolate</code></a>
       </td>
       <td>
-          <a href="https://erlang.org/doc/system/ref_man_processes.html">process</a>
+        <a href="https://erlang.org/doc/system/ref_man_processes.html">process</a>
       </td>
       <td>
-          <a href="https://go.dev/ref/spec#Go_statements">goroutine</a>
+        <a href="https://go.dev/ref/spec#Go_statements">goroutine</a>
       </td>
       <td>
-          <a href="https://peps.python.org/pep-0492/#specification">coroutine</a>
+        <a href="https://peps.python.org/pep-0492/#specification">coroutine</a>
       </td>
       <td>
-          <a href="https://docs.ruby-lang.org/en/master/Ractor.html"><code>Ractor</code></a>
+        <a href="https://docs.ruby-lang.org/en/master/Ractor.html"><code>Ractor</code></a>
       </td>
     </tr>
     <tr>
       <td>Port</td>
       <td>
-          <a href="https://clojure.github.io/core.async/clojure.core.async.html#var-chan"><code>(chan)</code></a>
+        <a href="https://clojure.github.io/core.async/clojure.core.async.html#var-chan"><code>(chan)</code></a>
       </td>
       <td>
-          <a href="https://api.flutter.dev/flutter/dart-isolate/ReceivePort-class.html"><code>ReceivePort</code></a>,
-          <a href="https://api.flutter.dev/flutter/dart-isolate/SendPort-class.html"><code>SendPort</code></a>
+        <a href="https://api.flutter.dev/flutter/dart-isolate/ReceivePort-class.html"><code>ReceivePort</code></a>, <a href="https://api.flutter.dev/flutter/dart-isolate/SendPort-class.html"><code>SendPort</code></a>
       </td>
       <td>
-          <a href="https://erlang.org/doc/system/ref_man_processes#message-queue-order">message queue</a>
+        <a href="https://erlang.org/doc/system/ref_man_processes#message-queue-order">message queue</a>
       </td>
       <td>
-          <a href="https://go.dev/ref/spec#Making_slices_maps_and_channels"><code>chan</code></a>
+        <a href="https://go.dev/ref/spec#Making_slices_maps_and_channels"><code>chan</code></a>
       </td>
       <td>
-          <a href="https://docs.python.org/3/library/asyncio-queue.html"><code>asyncio.Queue</code></a>
+        <a href="https://docs.python.org/3/library/asyncio-queue.html"><code>asyncio.Queue</code></a>
       </td>
       <td>
-          <a href="https://docs.ruby-lang.org/en/master/Ractor/Port.html"><code>Ractor::Port</code></a>
+        <a href="https://docs.ruby-lang.org/en/master/Ractor/Port.html"><code>Ractor::Port</code></a>
       </td>
     </tr>
     <tr>
       <td>Message</td>
       <td>
-          <a href="https://clojuredocs.org/clojure.core/some_q"><code>some?</code></a>
+        <a href="https://clojuredocs.org/clojure.core/some_q"><code>some?</code></a>
       </td>
       <td>
-          <a href="https://api.flutter.dev/flutter/dart-isolate/SendPort/send.html"><code>Object?</code></a>
+        <a href="https://api.flutter.dev/flutter/dart-isolate/SendPort/send.html"><code>Object?</code></a>
       </td>
       <td>
-          <a href="https://erlang.org/doc/apps/erts/erlang.html#t:any/0"><code>any()</code></a>
+        <a href="https://erlang.org/doc/apps/erts/erlang.html#t:any/0"><code>any()</code></a>
       </td>
       <td>
-          <a href="https://go.dev/ref/spec#Basic_interfaces"><code>any</code></a>
+        <a href="https://go.dev/ref/spec#Basic_interfaces"><code>any</code></a>
       </td>
       <td>
-          <a href="https://docs.python.org/3/library/stdtypes.html"><code>object</code></a>
+        <a href="https://docs.python.org/3/library/stdtypes.html"><code>object</code></a>
       </td>
       <td>
-          <a href="https://docs.ruby-lang.org/en/master/language/ractor_md.html#limited-sharing-between-ractors"><code>Object</code></a>*
+        <a href="https://docs.ruby-lang.org/en/master/language/ractor_md.html#limited-sharing-between-ractors"><code>Object</code></a>*
+      </td>
+    </tr>
+    <tr>
+      <td>Parallelism</td>
+      <td>
+        <a href="https://clojure.github.io/core.async/flow-guide.html">thread-per-process</a>
+      </td>
+      <td>
+        <a href="https://dart.dev/language/concurrency#how-isolates-work">multi-core</a>
+      </td>
+      <td>
+        <a href="https://www.erlang.org/doc/system/ref_man_processes.html#process-creation">multi-core</a>
+      </td>
+      <td>
+        <a href="https://go.dev/doc/faq#goroutines">multi-core</a>
+      </td>
+      <td>
+        <a href="https://docs.python.org/3/library/asyncio-eventloop.html">single-threaded</a>†
+      </td>
+      <td>
+        <a href="https://docs.ruby-lang.org/en/master/Ractor.html">multi-core</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Scheduling</td>
+      <td>
+        <a href="https://clojure.github.io/core.async/clojure.core.async.flow.html#var-process">OS / JVM</a>
+      </td>
+      <td>
+        <a href="https://dart.dev/language/concurrency#event-loop">cooperative</a>
+      </td>
+      <td>
+        <a href="https://hamidreza-s.github.io/erlang/scheduling/real-time/preemptive/migration/2016/02/09/erlang-scheduler-details.html">preemptive</a>
+      </td>
+      <td>
+        <a href="https://go.dev/src/runtime/preempt.go">preemptive</a>‡
+      </td>
+      <td>
+        <a href="https://docs.python.org/3/library/asyncio-dev.html#concurrency-and-multithreading">cooperative</a>
+      </td>
+      <td>
+        <a href="https://docs.ruby-lang.org/en/master/Ractor.html#class-ractor-ractors-vs-threads">OS threads</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Isolation</td>
+      <td>
+        <a href="https://clojure.github.io/core.async/flow-guide.html">shared (immutable)</a>
+      </td>
+      <td>
+        <a href="https://dart.dev/language/concurrency#how-isolates-work">fully isolated</a>
+      </td>
+      <td>
+        <a href="https://www.erlang.org/doc/system/ref_man_processes.html#signals">fully isolated</a>
+      </td>
+      <td>
+        <a href="https://go.dev/doc/faq#goroutines">shared memory</a>
+      </td>
+      <td>
+        <a href="https://docs.python.org/3/library/asyncio.html">shared memory</a>
+      </td>
+      <td>
+        <a href="https://docs.ruby-lang.org/en/master/language/ractor_md.html#limited-sharing-between-ractors">shared (limited)</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Backpressure</td>
+      <td>
+        <a href="https://clojure.github.io/core.async/clojure.core.async.html#var-chan">bounded</a>
+      </td>
+      <td>
+        <a href="https://api.flutter.dev/flutter/dart-isolate/ReceivePort-class.html">unbounded</a>
+      </td>
+      <td>
+        <a href="https://www.erlang.org/doc/system/ref_man_processes.html#signals">unbounded</a>
+      </td>
+      <td>
+        <a href="https://go.dev/ref/spec#Making_slices_maps_and_channels">configurable</a>
+      </td>
+      <td>
+        <a href="https://docs.python.org/3/library/asyncio-queue.html#asyncio.Queue">configurable</a>
+      </td>
+      <td>
+        <a href="https://docs.ruby-lang.org/en/master/Ractor/Port.html">unbounded</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Supervision</td>
+      <td>
+        <a href="https://clojure.github.io/core.async/clojure.core.async.flow.html"><code>:error-chan</code></a>
+      </td>
+      <td>
+        <a href="https://api.flutter.dev/flutter/dart-isolate/Isolate/addErrorListener.html"><code>addErrorListener</code></a>
+      </td>
+      <td>
+        <a href="https://www.erlang.org/doc/apps/stdlib/supervisor.html">OTP supervisors</a>
+      </td>
+      <td>
+        <a href="https://go.dev/ref/spec#Handling_panics"><code>recover</code></a>
+      </td>
+      <td>
+        <a href="https://docs.python.org/3/library/asyncio-task.html#asyncio.Task">task exceptions</a>
+      </td>
+      <td>
+        <a href="https://docs.ruby-lang.org/en/master/Ractor.html#method-i-join"><code>Ractor#join</code></a>
       </td>
     </tr>
   </tbody>
 </table>
+
+**Parallelism** describes whether the runtime can execute multiple processes
+simultaneously on separate CPU cores. Erlang, Dart, Go, and Ruby all achieve
+true multi-core parallelism. Clojure's `core.async.flow` runs each process on a
+JVM thread (from configurable thread pools), also achieving multi-core
+parallelism. Python's `asyncio` multiplexes coroutines on a single thread, so
+it's concurrent but not parallel without reaching for `multiprocessing`.
+
+**Scheduling** matters because it determines whether a long-running computation
+can starve other processes. Erlang is the gold standard here with
+reduction-counting preemption that guarantees fairness even for CPU-bound work.
+Go adopted signal-based preemption in 1.14 to prevent tight loops from hogging a
+core. Dart and Python are cooperative--a compute-bound isolate or coroutine must
+explicitly yield. Clojure and Ruby delegate to the OS/JVM thread scheduler.
+
+**Isolation** has direct implications for data safety in FBP networks. Erlang
+and Dart processes have fully separate heaps and can only communicate by
+copying messages. Go and Python have shared memory, requiring discipline to
+avoid races. Clojure takes a middle path by encouraging immutable shared data.
+Ruby's ractors restrict sharing to frozen/shareable objects.
+
+**Backpressure** determines whether a fast producer can overwhelm a slow
+consumer. Clojure's and Go's channels and Python's asyncio queues support
+bounded buffers that block senders when full--a natural fit for FBP. Erlang,
+Dart, and Ruby all have unbounded mailboxes/ports, meaning backpressure must be
+implemented at the application level.
+
+**Supervision** captures how errors in one process are detected and handled by
+the network. Erlang's OTP supervisor trees are the most mature model. Clojure's
+`core.async.flow` centralizes errors onto a dedicated `:error-chan`. The others
+offer varying levels of support through error listeners, panic recovery, or
+exception propagation from tasks.
 
 ## Community
 
