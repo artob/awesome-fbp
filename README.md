@@ -365,6 +365,9 @@ exception propagation from tasks.
 
 ## Community
 
+Here follows a small sample of the fine folks developing FBP frameworks and/or
+producing useful content about this approach to programming:
+
 [@antonmi](https://github.com/antonmi),
 [@apiri](https://github.com/apiri),
 [@artob](https://github.com/artob),
@@ -383,6 +386,12 @@ exception propagation from tasks.
 [@statusfailed](https://github.com/statusfailed),
 [@trustmaster](https://github.com/trustmaster),
 [@tyoung3](https://github.com/tyoung3)
+
+👉 [Join](https://join.slack.com/t/fbphq/shared_invite/enQtOTM4ODkzMTYyODE3LTJiMmNlZjhiMWY1MDY1ODA4Y2YzNDBlNDZlMTBkMDNlMjcwNzg2MGZhZjA2NjJjYTliYTM0OTIyYmM0Yzk0MDQ)
+the [FBP Slack](https://fbphq.slack.com)! (Historically, there was also an active
+[Flow Based Programming](https://groups.google.com/g/flow-based-programming)
+Google group but these days it's unmaintained and has been overrun by spam.
+Still, lots of useful information in the archives over there.)
 
 ---
 
