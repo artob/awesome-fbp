@@ -37,7 +37,7 @@ This is a community knowledge base for [flow-based programming (FBP)](https://gr
 
 This is a cross-reference between FBP implementations.
 
-### Glossary
+### Concepts
 
 | [Classical FBP]         | [Flux Theory] | [Apache NiFi]   | [NoFlo]    | [Node-RED]    | [RAMEN]         |
 | :---------------------- | :------------ | :-------------- | :--------- | :------------ | :-------------- |
@@ -55,6 +55,136 @@ This is a cross-reference between FBP implementations.
 [^2]: Components were described as "black boxes" in classical FBP.
 [^3]: Processes were interchangeably called "threads" in classical FBP.
 [^4]: Connections were also known as "bounded buffers" in classical FBP.
+
+### Languages
+
+A growing number of programming languages implement concurrency primitives
+suitable for building flow-based systems. Here follows a comparison of several
+widely-used languages:
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Clojure</th>
+      <th>Dart</th>
+      <th>Erlang</th>
+      <th>Golang</th>
+      <th>Python</th>
+      <th>Ruby</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Feature</td>
+      <td>
+          <a href="https://clojure.github.io/core.async/flow.html">core.async.flow</a>
+      </td>
+      <td>
+          <a href="https://dart.dev/language/isolates">isolates</a>
+      </td>
+      <td>
+          <a href="https://erlang.org/doc/system/ref_man_processes.html">processes</a>
+      </td>
+      <td>
+          <a href="https://go.dev/tour/concurrency/1">goroutines</a>,
+          <a href="https://go.dev/tour/concurrency/2">channels</a>
+      </td>
+      <td>
+          <a href="https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html">asyncio</a>
+      </td>
+      <td>
+          <a href="https://docs.ruby-lang.org/en/master/language/ractor_md.html">ractors</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Runtime</td>
+      <td>
+          <a href="https://clojure.github.io/core.async/clojure.core.async.flow.html"><code>core.async.flow</code></a>
+      </td>
+      <td>
+          <a href="https://api.flutter.dev/flutter/dart-isolate/"><code>dart:isolate</code></a>
+      </td>
+      <td>
+          <a href="https://erlang.org/doc/system/ref_man_processes.html"><code>spawn</code></a>
+      </td>
+      <td>
+          <a href="https://go.dev/ref/spec#Go_statements"><code>go</code></a>,
+          <a href="https://go.dev/ref/spec#Making_slices_maps_and_channels"><code>make(chan)</code></a>
+      </td>
+      <td>
+          <a href="https://docs.python.org/3/library/asyncio.html"><code>asyncio</code></a>
+      </td>
+      <td>
+          <a href="https://docs.ruby-lang.org/en/master/Ractor.html"><code>Ractor</code></a>
+      </td>
+    </tr>
+    <tr>
+      <td>Process</td>
+      <td>
+          <a href="https://clojure.github.io/core.async/clojure.core.async.flow.html#var-process"><code>(process)</code></a>
+      </td>
+      <td>
+          <a href="https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html"><code>Isolate</code></a>
+      </td>
+      <td>
+          <a href="https://erlang.org/doc/system/ref_man_processes.html">process</a>
+      </td>
+      <td>
+          <a href="https://go.dev/ref/spec#Go_statements">goroutine</a>
+      </td>
+      <td>
+          <a href="https://peps.python.org/pep-0492/#specification">coroutine</a>
+      </td>
+      <td>
+          <a href="https://docs.ruby-lang.org/en/master/Ractor.html"><code>Ractor</code></a>
+      </td>
+    </tr>
+    <tr>
+      <td>Port</td>
+      <td>
+          <a href="https://clojure.github.io/core.async/clojure.core.async.html#var-chan"><code>(chan)</code></a>
+      </td>
+      <td>
+          <a href="https://api.flutter.dev/flutter/dart-isolate/ReceivePort-class.html"><code>ReceivePort</code></a>,
+          <a href="https://api.flutter.dev/flutter/dart-isolate/SendPort-class.html"><code>SendPort</code></a>
+      </td>
+      <td>
+          <a href="https://erlang.org/doc/system/ref_man_processes#message-queue-order">message queue</a>
+      </td>
+      <td>
+          <a href="https://go.dev/ref/spec#Making_slices_maps_and_channels"><code>chan</code></a>
+      </td>
+      <td>
+          <a href="https://docs.python.org/3/library/asyncio-queue.html"><code>asyncio.Queue</code></a>
+      </td>
+      <td>
+          <a href="https://docs.ruby-lang.org/en/master/Ractor/Port.html"><code>Ractor::Port</code></a>
+      </td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>
+          <a href="https://clojuredocs.org/clojure.core/some_q"><code>some?</code></a>
+      </td>
+      <td>
+          <a href="https://api.flutter.dev/flutter/dart-isolate/SendPort/send.html"><code>Object?</code></a>
+      </td>
+      <td>
+          <a href="https://erlang.org/doc/apps/erts/erlang.html#t:any/0"><code>any()</code></a>
+      </td>
+      <td>
+          <a href="https://go.dev/ref/spec#Basic_interfaces"><code>any</code></a>
+      </td>
+      <td>
+          <a href="https://docs.python.org/3/library/stdtypes.html"><code>object</code></a>
+      </td>
+      <td>
+          <a href="https://docs.ruby-lang.org/en/master/language/ractor_md.html#limited-sharing-between-ractors"><code>Object</code></a>*
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Community
 
